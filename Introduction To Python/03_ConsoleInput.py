@@ -10,6 +10,7 @@ with the person using it?
 # Taking an input is as simple as using the input() function.
 # All inputs by default will become a String.
 # We will use print() to tell the user we are waiting for them.
+
 print("Please type something below: ")
 myInput = input()
 print("You typed in: " + myInput)
@@ -18,6 +19,7 @@ print("You typed in: " + myInput)
 # that we are waiting for input.
 # However, we can accomplish this by providing a string argument
 # to the input() function.
+
 myInput = input("Please type something here: ")
 print("You typed in: " + myInput)
 
@@ -27,9 +29,23 @@ print("You typed in: " + myInput)
 
 # If you need another type from the input, just use type casting,
 # as discussed in 2_VariablesAndDataTypes
+
 myInputNumber = int(input("Please give me a number: "))
 print("myInputNumber has type " + str(type(myInputNumber)) + " and a value of " + str(myInputNumber))
 
-# Notice, if you provide something that cannot be casted into an
-# integer, this will throw an error. We will discuss Error Handling
+# Notice, if you provide something that cannot be cast into an
+# integer, this will throw an error. Error Handling will be discussed
 # in a future section.
+
+"""
+Summary
+-----
+Taking input from the console is simply by using
+input(). The value coming back from input() is
+in the form of a String.
+    variableName = input()
+    
+You can provide a message to prompt the user for
+input by providing a String in the parenthesis.
+    variableName = input("Prompt: ")
+"""

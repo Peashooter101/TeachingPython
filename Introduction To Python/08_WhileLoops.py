@@ -54,3 +54,18 @@ while (True):                                       # Will execute at least the 
 # While loops are very useful in many kinds of code execution
 # and allow for you to have code execute many times without
 # having to manually hard code and type it out each time.
+
+"""
+Summary
+-----
+While loops are blocks of code that keep
+executing so long as it's condition is true.
+    while (condition):
+    
+continue is a keyword that can be used to
+ignore the rest of the code in the block and
+restart the loop.
+
+break is a keyword that can be used to completely
+exit the loop, even if the condition is still true.
+"""

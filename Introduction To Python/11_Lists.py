@@ -35,7 +35,7 @@ print("Empty List Constructor: " + str(emptyList))
 
 # Items in a List can be indexed. Indexes start at 0 and go up to the size - 1.
 # You can use the format List[index] to get the item at that index.
-# Each specific item is known as an *element*.
+# Each specific item is known as an element.
 
 print("myList Item 0: " + str(myList[0]))
 print("myList Item 1: " + str(myList[1]))
@@ -71,6 +71,25 @@ myList.append(myString)
 
 print("myList after Appending variable again: " + str(myList))
 
+# And we can also check if something is in a list using the keyword "in".
+
+inList1 = "BLEP" in myList
+print("\"BLEP\" in myList = " + str(inList1))
+inList2 = "Wowza" in myList
+print("\"Wowza\" in myList = " + str(inList2))
+
+# And we can also insert an element at any position in the list.
+# Insertion works by using an index as a reference.
+# Everything from that index and onward is pushed forward and
+# the object is fit into the spot.
+#
+# Remember, all indexes start at 0.
+
+insertList = [1, 2, 4, 5]
+print("insertList before insert: " + str(insertList))
+insertList.insert(2, 3)
+print("insertList after insert:  " + str(insertList))
+
 # Finally, a little advanced but there is something called List Comprehension.
 # In this example, we can use a for loop to automatically generate a list.
 # We put the initial i as the value that gets assigned.
@@ -83,3 +102,55 @@ print("List Comprehension: " + str(listComp))
 
 listComp = [i*2 for i in range(10)]
 print("List Comprehension x2: " + str(listComp))
+
+# Lists just provide a very useful way to store arbitrary amounts of
+# data without having to make a million variables. Let us see it in action
+# alongside an example function!
+
+shoppingStock = ["Apple", "Apple", "Dog", "What"]
+shoppingList = ["Apple", "Apple", "Apple"]
+
+print("Before Shopping:")
+print("  Shopping Stock: " + str(shoppingStock))
+print("  Shopping List:  " + str(shoppingList))
+
+
+def shop_items(shoppingListArg):
+    returnCart = []
+    for item in shoppingListArg:
+        if item in shoppingStock:
+            shoppingStock.remove(item)
+            shoppingList.remove(item)
+            returnCart.append(item)
+    return returnCart
+
+
+shoppingCart = shop_items(shoppingList)
+print("After Shopping:")
+print("  Shopping Stock: " + str(shoppingStock))
+print("  Shopping List:  " + str(shoppingList))
+print("  Shopping Cart:  " + str(shoppingCart))
+
+"""
+Summary
+-----
+Lists are data structures that hold elements.
+The elements can be of any type. Empty lists
+can be made with list() or [].
+    fish = [1, 2, "Red", "Blue"]
+
+Lists are ordered and can be elements can be
+edited and changed.
+    list[index]         Accesses element of list at position index.
+    list.append(x)      Adds element x to list.
+    list.remove(x)      Removes element x from list.
+    list.insert(pos, x) Inserts element x at index pos.
+    
+Lists can also:
+- Contain duplicate items.
+- Be iterated through like in a for loop.
+
+List Comprehension is when a List can generate values using
+some internal for loop or other iterable means.
+    [i for i in range(5,10)]
+"""

@@ -15,6 +15,7 @@ both of which output Boolean values.
 # A block of code is just code, but grouped up.
 #
 # The keyword "if" is used to start a condition block.
+
 if (True):
     print("This code will execute because \"if (True):\"")
 if (False):
@@ -56,6 +57,7 @@ else:
 # say it's small. If neither is the case, say it's tiny.
 
 # Take user input and turn it into a number.
+
 myNumberInput = int(input("Please give me a number: "))
 # If it is bigger than 50,
 if (myNumberInput > 50):
@@ -69,3 +71,24 @@ elif (myNumberInput > 25):
 else:
     # say it's tiny.
     print("The number is tiny!")
+
+"""
+Summary
+-----
+Conditional Statements are statements that check Boolean
+values and execute if their conditions are met.
+
+All chains of conditional statements will start with if.
+If the condition is true, the code block will execute.
+    if (condition):
+
+elif is used in case the above statements fail. Also known
+as "else if", if the above conditions are false but this one
+is true, the code block will execute.
+    elif (condition):
+
+else is used as the last part in a chain of conditional
+statements. If all the above conditions are false, the code
+block will execute. There is no other condition check.
+    else:
+"""

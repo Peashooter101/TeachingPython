@@ -6,6 +6,7 @@ or need to store a value to be edited later.
 
 This is accomplished through the use of Variables.
 """
+
 # There are a few standard *data types* in Python.
 # They can all be stored and represented in variables.
 # You declare a variable by giving it a name, then
@@ -27,16 +28,20 @@ aFloat = 10.5       # Used to store numbers with fractional pieces.
 #
 # Interestingly, this means you can reassign a variable with
 # a different data type unlike in other programming languages.
+
 myVariable = 10         # An Integer
 print("myVariable contains value " + str(myVariable))
+
 myVariable = "oops"     # A String
 print("myVariable contains value " + myVariable)
+
 myVariable = True       # A Boolean
 print("myVariable contains value " + str(myVariable))
 
 # If you are trying to figure out what the type of a variable is
 # you can accomplish this by using the type() function.
 # Note: You will need to surround the type with a str() to output it to console.
+
 print("The type of " + str(aBoolean) + " is " + str(type(aBoolean)))
 print("The type of " + aString + " is " + str(type(aString)))
 print("The type of " + str(anInteger) + " is " + str(type(anInteger)))
@@ -46,7 +51,32 @@ print("The type of " + str(aFloat) + " is " + str(type(aFloat)))
 # how we use the function str(). This is called *Type Casting*
 # and is done to convert one value to another.
 # Other type casting function exist such as int() and float()
+
 myInt = "10"
 print("Variable myInt contains a " + str(type(myInt)) + " with a value of " + myInt)
+
 myInt = int(myInt)
 print("Variable myInt now contains a " + str(type(myInt)) + " with a value of " + str(myInt))
+
+"""
+Summary
+-----
+Variables are a necessary component of programming
+because they let us store values and use them again
+and again. You can assign a variable using =.
+    variableName = Value
+
+Data Types describe the kind of value the variable
+holds and can be extracted by using type().
+    String      - Holds Text
+    Integer     - Holds Whole Numbers
+    Floats      - Holds Numbers with Fractional Pieces
+    Booleans    - Holds a True or False Value
+    
+And you can convert them between each other using their
+respective casting functions:
+    str()       - Convert to String
+    int()       - Convert to Integer
+    float()     - Convert to Floating Point Value
+    bool()      - Convert to Boolean
+"""

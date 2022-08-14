@@ -61,3 +61,23 @@ for i in range(1, 11):                              # Loop for the values 1 thro
 # and 10 does not even get shown because the loop is broken when i is 9.
 #
 # Okay, your brain broken yet? AWESOME!
+
+"""
+Summary
+-----
+For loops are blocks of code that keep
+executing so long as there is still more
+things to execute off of.
+    for variable in iterable:
+    
+You can use the variable's name to access
+the current element for that iteration of
+the loop.
+    for varName in iterable:
+        print(varName)
+    
+Something iterable includes range() which
+can be used to produce numbers for the loop.
+    for i in range(1, 10, 2):
+        Produces [1, 3, 5, 7, 9] for the loop.
+"""

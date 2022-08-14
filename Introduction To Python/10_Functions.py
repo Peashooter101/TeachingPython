@@ -84,3 +84,34 @@ def documenting_function(arg1):
     """
     print("Documenting: " + str(arg1))
     return 0
+
+
+# The biggest reason you will want to use functions is its ability
+# to organize your code into much more useful smaller modules.
+# This will make the main execution of your code look cleaner and
+# easier to read.
+
+"""
+Summary
+-----
+Functions are blocks of code that can be
+called at a later time through their name.
+They are defined using the word def.
+    def function_name():
+    
+They are called using their function name.
+    function_name()
+    
+You can define functions to have parameters
+and they can also have default arguments.
+These arguments can be used in the function
+itself.
+    def func_args(a, b=10):
+        print(a + b)
+
+You can return a value after the function is
+called to use in other parts of code later.
+    def func_sum(a=10, b=10):
+        return a+b
+    variable = func_sum()
+"""

@@ -16,6 +16,7 @@ not, and, or, ^ (Exclusive OR)
 # And are pretty much right what they say on the tin.
 # The first operator we will discuss is NOT,
 # NOT inverts the value it has.
+
 boolean1 = not True
 print("\"not True\" is " + str(boolean1))
 
@@ -25,6 +26,7 @@ print("\"not True\" is " + str(boolean1))
 # them, there are a total of four possible outcomes.
 #
 # AND should output True if both Booleans are True.
+
 boolean2 = False and False
 print("\"False and False\" is " + str(boolean2))
 boolean3 = False and True
@@ -35,6 +37,7 @@ boolean5 = True and True
 print("\"True and True\" is " + str(boolean5))
 
 # OR should output True if either Booleans are True.
+
 boolean6 = False or False
 print("\"False or False\" is " + str(boolean6))
 boolean7 = False or True
@@ -51,6 +54,7 @@ print("\"True or True\" is " + str(boolean9))
 #   (A or B) and not (A and B)
 # So why is there no keyword for XOR? Well ^ is known as *Bitwise XOR*
 # but that part is not important right now.
+
 boolean10 = False ^ False
 print("\"False ^ False\" is " + str(boolean10))
 boolean11 = False ^ True
@@ -64,8 +68,20 @@ print("\"True ^ True\" is " + str(boolean13))
 # Have their own order of operations:
 #   not -> and -> or
 # And as always, parenthesis will group them together.
+
 boolean14 = (False or True) and not(True and True)
 # TODO: What is the value of boolean14? True or False?
 
 # Alright, this is a fair bit of information on operators.
 # Maybe now we can do something with it.
+
+"""
+Summary
+-----
+Logical Operators are operators that work on
+Booleans, they help with the logic of the program.
+    not (Inverts the value)
+    and (Both must be true to be true)
+    or  (Either must be true to be true)
+    ^   (Exclusive OR, Either must be true but not both, to be true)
+"""
