@@ -14,9 +14,9 @@ They rely on the usage of Comparison and Logical Operators to work, both of whic
 #
 # The keyword "if" is used to start a condition block.
 
-if (True):
+if True:
     print("This code will execute because \"if (True):\"")
-if (False):
+if False:
     print("This code will not execute because \"if (False):\"")
 
 # Your IDE will be highlighting the second print statement, saying it is wrong because the code is unreachable.
@@ -27,16 +27,16 @@ if (False):
 #   elif will execute if the above conditions are false but its is true
 #   else will execute if the above conditions are all false
 
-if (False):
+if False:
     print("This code will not execute because \"if (False):\"")
-elif (True):
+elif True:
     print("This code will execute because \"elif (True):\"")
 else:
     print("This code will not execute because a condition above it is True")
 
-if (False):
+if False:
     print("This code will not execute because \"if (False):\"")
-elif (False):
+elif False:
     print("This code will not execute because \"elif (False):\"")
 else:
     print("This code will execute because all conditions above it are False")
@@ -54,11 +54,11 @@ else:
 # Take user input and turn it into a number.
 myNumberInput = int(input("Please give me a number: "))
 # If it is bigger than 50,
-if (myNumberInput > 50):
+if myNumberInput > 50:
     # say it's big.
     print("The number is big!")
 # If it is not, but it is bigger than 25,
-elif (myNumberInput > 25):
+elif myNumberInput > 25:
     # say it's small.
     print("The number is small!")
 # If neither is the case, say it's tiny.

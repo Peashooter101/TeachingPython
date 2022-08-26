@@ -18,7 +18,7 @@ boolean1 = not True
 print("\"not True\" is", boolean1)
 
 # AND and OR both operate on two booleans and compare the values. They should do exactly what it says on the tin.
-# Since there are 2 values to a Boolean and we are comparing them, there are a total of four possible outcomes.
+# Since there are 2 values to a Boolean, and we are comparing them, there are a total of four possible outcomes.
 
 # AND should output True if both Booleans are True.
 
