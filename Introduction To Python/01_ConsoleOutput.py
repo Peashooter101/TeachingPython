@@ -45,6 +45,13 @@ print("This thing is a number ->", 10)
 
 # In the above example, notice that Python automatically uses a space to separate the two arguments.
 
+# You can also choose your own separator (the default separator is space).
+
+print("This thing is a number", 10, sep=" -> ")
+
+# This effectively does the same thing as the previous print command, but the separator is -> now.
+# sep is known as a Keyword Parameter. Keyword parameters will be discussed later.
+
 """
 Summary
 -----
